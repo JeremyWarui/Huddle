@@ -59,6 +59,7 @@ button {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   background-color: #f2f2f8;
+  color: white;
 }
 
 form {
@@ -91,15 +92,6 @@ address {
   font-style: normal;
   align-items: center;
 }
-div.attribution {
-  padding: 3em;
-  font-size: 11px;
-  text-align: center;
-}
-
-div.attribution a {
-  color: hsl(228, 45%, 44%);
-}
 
 /* icons */
 i {
@@ -125,6 +117,7 @@ i {
 
 .nav-button {
   background-color: #fff;
+  color: var(--Pink);
   border: 1px solid var(--Pink);
   padding: 0.5em 1.2em;
 }
@@ -438,4 +431,14 @@ footer {
   i {
     margin-right: 1em;
   }
+}
+
+.author .attribution {
+  padding: 3em;
+  font-size: 1em;
+  text-align: center;
+}
+
+.author .attribution a {
+  color: hsl(228, 45%, 44%);
 }
