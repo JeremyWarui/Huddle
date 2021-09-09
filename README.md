@@ -20,7 +20,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Github](https://github.com/JeremyWarui/Huddle)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live Site](https://huddle-red.vercel.app/)
 
 ## My process
 
