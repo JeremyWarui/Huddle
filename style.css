@@ -91,12 +91,13 @@ address {
   font-style: normal;
   align-items: center;
 }
-div .attribution {
+div.attribution {
+  padding: 3em;
   font-size: 11px;
   text-align: center;
 }
 
-div .attribution a {
+div.attribution a {
   color: hsl(228, 45%, 44%);
 }
 
