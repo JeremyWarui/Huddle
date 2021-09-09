@@ -22,9 +22,6 @@
   overflow-x: hidden;
 }
 
-html {
-  width: 100vw;
-}
 /* -------------------------------
 ----------html tags ------------------
 ----------------------------------*/
@@ -35,7 +32,8 @@ body {
 }
 
 header {
-  margin: 2em 0.5em 4em;
+  margin: 2em auto 4em;
+  width: 90%;
 }
 
 a {
@@ -142,6 +140,7 @@ i {
   padding: 2em;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 6em;
 }
 
@@ -255,11 +254,15 @@ section,
     background-image: url("images/bg-section-top-mobile-1.svg");
   }
 }
+@media screen and (min-width: 400px) {
+  .statistics {
+    background-image: url("images/bg-section-top-desktop-1.svg");
+  }
+}
 
 /* on larger screens than  375px width */
 @media screen and (min-width: 800px) {
   .statistics {
-    background-image: url("images/bg-section-top-desktop-1.svg");
     flex-direction: row;
     justify-content: center;
   }
