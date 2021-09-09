@@ -156,6 +156,7 @@ i {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin-bottom: 3em;
+  max-width: 60ch;
 }
 
 /* in large screens like desktop */
@@ -245,6 +246,7 @@ section,
 .statistics {
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: contain;
 }
 
 /* on mobile size of 375px width */
@@ -303,6 +305,7 @@ section,
 .flowing-convo {
   background-repeat: no-repeat;
   background-position: top, bottom;
+  background-size: contain;
 }
 
 /*  for smalll screens with 375px width */
@@ -325,6 +328,7 @@ section,
 .cta {
   background-repeat: no-repeat;
   background-position: top;
+  background-size: contain;
 }
 
 /*  for screens with width of 375px like mobile */
@@ -369,8 +373,6 @@ footer::before {
 
 footer {
   background-color: var(--veryDarkCyan);
-  background-repeat: no-repeat;
-  background-size: cover;
   color: #fff;
 }
 
