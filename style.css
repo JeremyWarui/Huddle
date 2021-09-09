@@ -1,0 +1,440 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*colors  */
+
+  /* 1. primary colors */
+  --Pink: hsl(322, 100%, 66%);
+  --LightPink: hsl(321, 100%, 78%);
+  --LightRed: hsl(0, 100%, 63%);
+
+  /* 2. neutral colors */
+  --veryDarkCyan: hsl(192, 100%, 9%);
+  --veryPaleBlue: hsl(207, 100%, 98%);
+
+  box-sizing: border-box;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+html {
+  width: 100vw;
+}
+/* -------------------------------
+----------html tags ------------------
+----------------------------------*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+header {
+  margin: 2em 0.5em 4em;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+button {
+  padding: 0.8em 2.2em;
+  border-radius: 6em;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  background-color: #f2f2f8;
+}
+
+form {
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  display: block;
+  padding: 1.3em;
+  border-radius: 0.5em;
+  margin-bottom: 0.8em;
+  border: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+form button {
+  border-radius: 0.5em;
+  padding: 1em 3em;
+  background-color: var(--Pink);
+  color: #fff;
+  align-self: flex-end;
+}
+
+address {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+  font-style: normal;
+  align-items: center;
+}
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* icons */
+i {
+  margin: 0.2em;
+  font-size: 1.8em;
+}
+
+/* -------------------------------
+----------class selectors ------------------
+----------------------------------*/
+
+/* navigation bar */
+
+.navbar-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 6.5em;
+}
+
+.nav-button {
+  background-color: #fff;
+  border: 1px solid var(--Pink);
+  padding: 0.5em 1.2em;
+}
+
+.nav-button a {
+  color: var(--Pink);
+}
+
+@media screen and (min-width: 800px) {
+  nav {
+    padding: 1em 4em;
+  }
+  .logo {
+    width: 14em;
+  }
+}
+
+/* hero section */
+
+.hero {
+  text-align: center;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+}
+
+.hero-title {
+  font-size: 1.6em;
+  margin-bottom: 1em;
+  font-family: "Poppins", sans-serif;
+  color: var(--veryDarkCyan);
+}
+
+.hero-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin-bottom: 3em;
+}
+
+/* in large screens like desktop */
+
+@media screen and (min-width: 800px) {
+  .hero {
+    margin-top: 10em;
+  }
+  .hero-title {
+    font-size: 3em;
+  }
+  .hero-text {
+    padding: 0 25em;
+    color: var(--veryDarkCyan);
+    font-weight: 600;
+  }
+  button {
+    padding: 1.5em 5em;
+    font-size: 1em;
+    font-weight: 600;
+  }
+}
+
+/* sections */
+
+section,
+.cta,
+.statistics {
+  text-align: center;
+  padding: 12em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 7em;
+}
+
+/* in large screens like desktop */
+@media screen and (min-width: 800px) {
+  section {
+    flex-direction: row;
+    align-items: center;
+    gap: 8em;
+  }
+}
+
+.section-body {
+  padding: 0.8em;
+}
+
+.section-title {
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0.8em;
+}
+
+.section-text {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* in large screens like desktop */
+@media screen and (min-width: 800px) {
+  .section-title {
+    font-size: 2em;
+  }
+  .section-text {
+    font-weight: 600;
+    padding-right: 2em;
+  }
+}
+
+.section-button {
+  background-color: var(--Pink);
+  box-shadow: 0 5px 5px hsl(240, 1%, 80%);
+}
+
+.section-button a {
+  color: #fff;
+}
+
+/* in large screens like desktop */
+@media screen and (min-width: 800px) {
+  .section-body {
+    text-align: left;
+  }
+}
+
+/* statistics section */
+.statistics {
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+/* on mobile size of 375px width */
+@media screen and (width: 375px) {
+  .statistics {
+    background-image: url("images/bg-section-top-mobile-1.svg");
+  }
+}
+
+/* on larger screens than  375px width */
+@media screen and (min-width: 800px) {
+  .statistics {
+    background-image: url("images/bg-section-top-desktop-1.svg");
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.stats-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto 3em;
+}
+.stats-number {
+  font-size: 5em;
+}
+.stats-icon {
+  width: 3em;
+  margin-left: 1em;
+  align-self: flex-start;
+}
+
+/* grow together flowing conversations and your users section */
+
+.grow-together,
+.your-users {
+  background-color: var(--veryPaleBlue);
+}
+
+/* in large screens like desktop */
+@media screen and (min-width: 800px) {
+  .grow-together,
+  .your-users,
+  .flowing-convo,
+  .statistics {
+    padding-left: 6em;
+    padding-right: 6em;
+  }
+
+  .grow-together .section-image,
+  .your-users .section-image {
+    order: 2;
+  }
+}
+
+.flowing-convo {
+  background-repeat: no-repeat;
+  background-position: top, bottom;
+}
+
+/*  for smalll screens with 375px width */
+@media screen and (width: 375px) {
+  .flowing-convo {
+    background-image: url("images/bg-section-bottom-mobile-1.svg"),
+      url("images/bg-section-top-mobile-2.svg");
+  }
+}
+
+/* in large screens more than 400px width  */
+@media screen and (min-width: 400px) {
+  .flowing-convo {
+    background-image: url("images/bg-section-bottom-desktop-1.svg"),
+      url("images/bg-section-top-desktop-2.svg");
+  }
+}
+
+/* call to action section */
+.cta {
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+/*  for screens with width of 375px like mobile */
+@media screen and (width: 375px) {
+  .cta {
+    background-image: url("images/bg-section-bottom-mobile-2.svg");
+  }
+}
+
+/* in large screens more than 400px width */
+
+@media screen and (min-width: 400px) {
+  .cta {
+    background-image: url("images/bg-section-bottom-desktop-2.svg");
+    margin-bottom: 5em;
+  }
+}
+
+/*---------------------------------------------------------------
+------------- FOOTER ---------------------------------------------
+---------------------------------------------------------------- */
+footer::before {
+  position: relative;
+  background-repeat: no-repeat;
+}
+
+/*  for the mobile screens with 375px width */
+@media screen and (width: 375px) {
+  footer::before {
+    content: url("images/bg-footer-top-mobile.svg");
+    top: -50px;
+  }
+}
+
+/* in large screens with width more than 400px */
+@media screen and (min-width: 400px) {
+  footer::before {
+    content: url("images/bg-footer-top-desktop.svg");
+    top: -150px;
+  }
+}
+
+footer {
+  background-color: var(--veryDarkCyan);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.footer-container {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 6em;
+  line-height: 2;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.logo-text {
+  font-size: 2em;
+  font-family: "Poppins", sans-serif;
+  margin-left: 0.2em;
+}
+.logo-icon {
+  width: 2.5em;
+}
+
+.footer-icon {
+  width: 1.2em;
+}
+
+.newsletter-title {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.address {
+  margin: 3em auto;
+}
+
+/* in large screens like the desktop */
+@media screen and (min-width: 800px) {
+  .footer-container {
+    flex-direction: row-reverse;
+    gap: 10em;
+    padding-left: 7em;
+    padding-right: 7em;
+    padding-bottom: 7em;
+  }
+
+  .footer-text {
+    padding-right: 10em;
+  }
+
+  .logo-text {
+    font-size: 3.5em;
+  }
+
+  i {
+    margin-right: 1em;
+  }
+}
